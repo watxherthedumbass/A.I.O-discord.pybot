@@ -628,11 +628,6 @@ async def reasonlist(ctx):
   await ctx.send(", ".join(reason_list))
 
 
-
-@bot.event
-async def on_member_join(member):
- await bot.fetch_channel(966171824884957316).send(f"{member.name} has joined the server")
-
 @bot.event
 async def on_message(message):
   if message.author == bot.user:
